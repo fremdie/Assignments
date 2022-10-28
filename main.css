@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600&display=swap');
+
+:root {
+    --color1: hsla(205, 46%, 10%, 1);
+    --color2: hsla(191, 28%, 23%, 1);
+    --color3: hsla(207, 41%, 27%, 1);
+    --color4: hsla(0, 0%, 100%, 0.9);
+    --color5: hsla(97, 74%, 36%, 0.938);
+    /* --color1: hsla(8, 66%, 73%, 1);
+    --color2: hsla(11, 50%, 87%, 1);
+    --color3: hsla(8, 66%, 73%, 1);
+    --color4: hsla(0, 0%, 100%, 0.9);
+    --color5: hsla(97, 74%, 36%, 0.938); */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    background: var(--color1);
+    
+}
+.container {
+    position: relative;
+    top: 1rem;
+    left: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 350px;
+    justify-content: center;
+    background: var(--color2);
+    box-shadow: 0 8px 32px 0 var(--color2);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid var(--color3);
+}
+.registration, .login-title {
+    border-radius: 10px 10px 0 0;
+    background-color: var(--color1);
+    text-align: center;
+    height: 2.5rem;
+    padding-top: 12px;
+    color: var(--color4);
+}
+::placeholder {
+    font-style: normal;
+    font-size: smaller;
+}
+.form {
+    text-align: center;
+
+}
+.form label {
+    color: var(--color4);
+    display: none;
+}
+
+.form input, .form-login input, #gender, #color {
+    height: 2rem;
+    width: 15rem;
+    letter-spacing: 1.5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.btn {
+    color: var(--color4);
+    background-color: var(--color5);
+    height: 2rem;
+    width: 8rem;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px;
+    
+}
+.btn:hover {
+    cursor: pointer;
+    color: var(--color1);
+    box-shadow: 0 8px 32px 0 var(--color1);
+}
+
+/* success page */
+.success {
+    position: relative;
+    top: 13rem;
+}
+.check {
+    /* border: 1px solid; */
+    height: 6rem;
+    text-align: center;
+    padding: 10px;
+}
+.fa-circle-check {
+    font-size: 5rem;
+    color: var(--color5);
+}
+.message {
+    /* border: 1px solid; */
+    text-align: center;
+    color: var(--color4);
+    height: 3rem;
+    padding-top: 15px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+/* login page */
+.form-login {
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 9rem;
+}
+.form-login label {
+    color: var(--color1);
+}
+h2 {
+    font-weight: 600;
+    font-size: 25px;
+}
+.form-login input {
+    margin-bottom: 15px;
+}
+.form-login .btn {
+    position: relative;
+    top: 0;
+    left: 25%;
+}
+.login {
+    position: relative;
+    top: 13rem;
+}

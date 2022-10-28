@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/main.css">
+  <script src="https://kit.fontawesome.com/c2bfa71ee8.js" crossorigin="anonymous"></script>
+  <title>Login</title>
+</head>
+
+<body>
+  <main>
+    <div class="container login">
+      <div class="login-title">
+        <h2>Login</h2>
+      </div>
+      <div class="form-login">
+        <form action="/success.html" method="get">
+          <div class="email">
+            <label for="email"><i class="fa-solid fa-user"></i></label>
+            <input type="email" name="email" id="email" placeholder="Email Address" required>
+          </div>
+          <div class="password">
+            <label for="pwd"><i class="fa-solid fa-lock"></i></label>
+            <input type="password" name="pwd" id="pwd" minlength="7" maxlength="9" placeholder="Password" required>
+          </div>
+          <button class="btn" type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
